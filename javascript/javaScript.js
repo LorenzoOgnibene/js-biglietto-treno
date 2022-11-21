@@ -5,10 +5,10 @@
  */
 
 
-const userKilometres = parseInt = prompt ('Inseret how many kilometers you want to travel ');
+const userKilometres = parseInt(prompt ('Inseret how many kilometers you want to travel '));
 console.log(userKilometres);
 
-const userAge = parseInt = prompt ('Inseret your age ');
+const userAge = parseInt(prompt ('Inseret your age '));
 console.log(userAge);
 
 const ticketPrice = userKilometres * 0.21;
@@ -21,9 +21,9 @@ if (userAge < 18){
     totalPrice = ticketPrice - underageDiscount;
     console.log(totalPrice);
 }else if (userAge > 65){
-    const underageDiscount = ticketPrice * 0.40;
-    totalPrice = ticketPrice - underageDiscount;
+    const overageDiscount = ticketPrice * 0.40;
+    totalPrice = ticketPrice - overageDiscount;
     console.log(totalPrice);
 }
 
-document.getElementById('ticket').innerHTML= 'Buy ticket for: ' + totalPrice + "\44";
+document.getElementById('ticket').innerHTML= 'Buy ticket for: ' + totalPrice.toFixed(2) + "\44";
