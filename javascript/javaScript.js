@@ -14,7 +14,7 @@ console.log(userAge);
 const ticketPrice = userKilometres * 0.21;
 console.log(ticketPrice);
 
-let totalPrice = 'Buy ticket for: ' + ticketPrice;
+let totalPrice = ticketPrice;
 
 if (userAge < 18){
     const underageDiscount = ticketPrice * 0.20;
